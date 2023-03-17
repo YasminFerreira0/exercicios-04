@@ -13,11 +13,12 @@ void main ()
             < 4,0 E
 
         O programa deve escrever o número de identificação do aluno e o conceito obtido.*/
+    int id;
 
-    float nIden, n1, n2, n3, MA, ME;
+    float n1, n2, n3, MA, ME;
 
     printf("Informe o numero de identoficacao doo aluno: ");
-    scanf("%f", &nIden);
+    scanf("%d", &id);
 
     printf("\nInforme a primeira nota: ");
     scanf("%f", &n1);
@@ -34,18 +35,18 @@ void main ()
     MA = (n1 + (n2 * 2) + (n3 * 3) + ME ) / 7;
 
     if (MA>=9.0)
-        printf("\nAluno: %.0f, Nota: A", nIden);
+        printf("\nId aluno: %d, Nota: A", id);
     else {
         if (MA<9.0 && MA>=7.5)
-            printf("\nAluno: %.0f, Nota: B", nIden);
+            printf("\nid a luno: %d, Nota: B", id);
         else {
             if (MA<7.5 && MA>=6.0)
-                printf("\nAluno: %.0f, Nota: C", nIden);
+                printf("\nid aluno: %d, Nota: C", id);
             else{
                 if(MA<6.0 && MA>=4.0)
-                    printf("\nAluno: %.0f, Nota: D", nIden);
+                    printf("\nId aluno: %d, Nota: D", id);
                 else
-                    printf("\nAluno: %.0f, Nota: E", nIden);
+                    printf("\nId aluno: %d; Nota: E", id);
             }
 
         }
